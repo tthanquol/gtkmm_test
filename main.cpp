@@ -38,6 +38,16 @@ Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv, "com.g
     Gtk::MenuItem *menuitem_Oprogramie = Gtk::manage(new Gtk::MenuItem("O pr_ogramie",true)); //tworzenie pozycji o programie dla menu Pomoc
     menuPomoc->append(*menuitem_Oprogramie);
 
+    Gtk::Grid *grid =Gtk::manage(new Gtk::Grid);
+    grid->set_border_width(10);
+    vbox->add(*grid);
+
+    Gtk::Button *button1 =Gtk::manage(new Gtk::Button("Przycisk"));
+    grid->attach(*button1,0,0,2,2);
+    Gtk::Button *button2 =Gtk::manage(new Gtk::Button("Przycisk"));
+    grid->attach(*button2,2,0,1,1);
+
+
 
 
    vbox->show_all();

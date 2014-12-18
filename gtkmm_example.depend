@@ -6584,3 +6584,13 @@
 	<sigc++/sigc++.h>
 	<gtkmm/scalebutton.h>
 
+1418925495 source:/home/tete/koding/codeblocks/gtkmm_test/main.cpp
+	<gtkmm.h>
+	"mywindow.h"
+
+1418929565 /home/tete/koding/codeblocks/gtkmm_test/include/mywindow.h
+	<gtkmm.h>
+
+1418929615 source:/home/tete/koding/codeblocks/gtkmm_test/src/mywindow.cpp
+	"mywindow.h"
+

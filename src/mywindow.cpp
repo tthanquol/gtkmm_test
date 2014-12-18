@@ -33,8 +33,7 @@ mywindow::mywindow()
     menuitem_help->set_submenu(*menuPomoc);
 
     Gtk::MenuItem *menuitem_Oprogramie = Gtk::manage(new Gtk::MenuItem("O pr_ogramie",true)); //tworzenie pozycji o programie dla menu Pomoc
-
-    menuitem_Oprogramie->signal_activate().connect(sigc::mem_fun(*this, &mywindow::on_oprogramie_click));
+    menuitem_Oprogramie->signal_activate().connect(sigc::mem_fun(*this, &mywindow::on_oprogramie_click));//gdy pozycja kliknieta
     menuPomoc->append(*menuitem_Oprogramie);
 
     Gtk::Grid *grid =Gtk::manage(new Gtk::Grid); //dodanie kontenera typu "siatka"

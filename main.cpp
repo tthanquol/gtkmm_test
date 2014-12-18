@@ -1,5 +1,5 @@
 #include <gtkmm.h>
-
+#include "mywindow.h"
 int main(int argc, char *argv[])
 {
 Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv, "com.gtkmm.tutorial2.base");
@@ -38,14 +38,14 @@ Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv, "com.g
     Gtk::MenuItem *menuitem_Oprogramie = Gtk::manage(new Gtk::MenuItem("O pr_ogramie",true)); //tworzenie pozycji o programie dla menu Pomoc
     menuPomoc->append(*menuitem_Oprogramie);
 
-    Gtk::Grid *grid =Gtk::manage(new Gtk::Grid);
+    Gtk::Grid *grid =Gtk::manage(new Gtk::Grid); //dodanie kontenera typu "siatka"
     grid->set_border_width(10);
-    vbox->add(*grid);
+    vbox->add(*grid); //dodanie grida do vboxa
 
     Gtk::Button *button1 =Gtk::manage(new Gtk::Button("Przycisk"));
-    grid->attach(*button1,0,0,2,2);
+    grid->attach(*button1,1,1,2,2);
     Gtk::Button *button2 =Gtk::manage(new Gtk::Button("Przycisk"));
-    grid->attach(*button2,2,0,1,1);
+    grid->attach(*button2,3,2,1,1);
 
 
 
